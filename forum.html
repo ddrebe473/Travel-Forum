@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+    <h1>Travel form</h1>
+    <div class="holder">
+        <div class="multipleinfo">
+            <p>First Name*:</p>
+            <input type="text" id="firstname" class="textfield" placeholder="First Name">
+            <p>Last Name*:</p>
+            <input type="text" id="lastname" class="textfield" placeholder="Last Name">
+        </div>
+        <div class="multipleinfo">
+            <p>Date Of Birth*</p>
+            <input type="date" id="dob" class="textfield">
+            <p>Bags:</p>
+            <input type="text" id="bags" class="textfield" placeholder="0">
+        </div>
+        <div class="multipleinfo">
+            <p>Departing*</p>
+            <input type="text" id="departing" class="textfield" placeholder="City, State">
+            <p>Arriving*</p>
+            <input type="text" id="arriving" class="textfield" placeholder="City, State">
+        </div>
+        <div class="multipleinfo">
+            <p>Date of Departure*</p>
+            <input type="date" id="leaving" class="textfield">
+            <p>Date of Return</p>
+            <input type="date" id="returning" class="textfield">
+        </div>
+        <div class="multipleinfo">
+            <p style="display: inline; width: 100%;">What kind of meal would you like?</p>
+            <div class="holder">
+                <label for="mealtype1" style="width:100%">Chicken</label><br>
+                <input type="radio" value="Chicken" id="mealtype1" name="mealtype">
+            </div>
+            <div class="holder">
+                <label for="mealtype2" style="width:100%">Fish</label><br>
+                <input type="radio" value="Fish" id="mealtype2" name="mealtype">
+            </div>
+            <div class="holder">
+                <label for="mealtype3" style="width:100%">Vegetarian</label><br>
+                <input type="radio" value="Vegetarian" id="mealtype3" name="mealtype">
+            </div>
+        </div>
+    </div>
+    <div class="holder">
+        <button onclick="submitInfo()" class="buttoninput"
+            style="font-size: 15px;">Submit</button>
+    </div>
+    <div class="holder">
+        <button onclick="printNames()" class="buttoninput"
+            style="font-size: 15px;">Print Names</button>
+    </div>
+    
+    <p id= "names">
+
+    </p>
+
+    <script src ="formum.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: cyan;
+}
+h1{
+text-align: center;
+background-color:black;
+color: white;
+
+}
+/*h2{
+     position: relative;
+    left: 30%;
+    padding-left:0; 
+}*/
+.holder{
+text-align: center;
+}
+
+.buttoninput{
+    position: relative;
+    width: 50rem;
+    height: 10rem;
+    background-color: white
+}
+
+.multipleinfo{
+
+}
